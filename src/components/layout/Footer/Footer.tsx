@@ -113,8 +113,7 @@ export function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/35">
           <p>&copy; 2026 Avocado Consulting</p>
           <div className="flex gap-6">
-            <Link href="/privacy-policy" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white/70 transition-colors">Terms</Link>
+            <Link href="/policies" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
           </div>
         </div>
       </Container>
