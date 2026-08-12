@@ -8,9 +8,9 @@ import { FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 const socialLinks = [
-  { label: "Instagram", href: "https://instagram.com/yourhandle", icon: FaInstagram },
-  { label: "LinkedIn", href: "https://linkedin.com/company/yourhandle", icon: FaLinkedinIn },
-  { label: "X", href: "https://x.com/yourhandle", icon: FaXTwitter },
+  { label: "Instagram", href: "#", icon: FaInstagram },
+  { label: "LinkedIn", href: "#", icon: FaLinkedinIn },
+  { label: "X", href: "#", icon: FaXTwitter },
 ];
 
 export function Footer() {

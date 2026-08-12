@@ -1,5 +1,7 @@
-export default function FeaturesPage (){
+export default function featuresPage(){
     return(
-        <div>FeaturesPage</div>
+        <div>
+            FeaturePage
+        </div>
     )
 }
