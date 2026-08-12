@@ -4,14 +4,9 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { navLinks, servicesDropdown } from "@/data/nav"; // adjust path as per your project
 import Image from "next/image";
-import { FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { FiMapPin } from "react-icons/fi";
 import Link from "next/link";
 
-const socialLinks = [
-  { label: "Instagram", href: "#", icon: FaInstagram },
-  { label: "LinkedIn", href: "#", icon: FaLinkedinIn },
-  { label: "X", href: "#", icon: FaXTwitter },
-];
 
 export function Footer() {
   return (
@@ -63,23 +58,14 @@ export function Footer() {
               more scalable organizations.
             </p>
 
-            {/* Social Media Icons */}
-            <div className="flex items-center gap-3">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <Link
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:border-brand hover:text-brand hover:bg-brand/10 transition-colors"
-                  >
-                    <Icon size={16} />
-                  </Link>
-                );
-              })}
+            {/* Address */}
+            <div className="flex items-start gap-2.5 mb-6 text-sm text-white/60">
+              <FiMapPin size={16} className="mt-0.5 shrink-0 text-brand" />
+              <p className="leading-relaxed">
+                Dubai Investment Park
+                <br />
+                Dubai, UAE
+              </p>
             </div>
           </div>
 
